@@ -1,0 +1,28 @@
+# 🧠 Gerador de Imagens com IA
+
+Projeto em Python que gera imagens automaticamente usando inteligência artificial com o modelo **FLUX (Hugging Face)**.
+
+---
+
+## 📸 Demonstração
+
+> Gere imagens a partir de prompts de texto diretamente pelo navegador.
+
+- Interface web com Flask (em construção)
+- Geração automática de imagens
+- Histórico de prompts
+- Galeria de imagens geradas
+
+---
+
+## 🚀 Tecnologias utilizadas
+
+- Python
+- Flask
+- Hugging Face Hub
+- Pillow (PIL)
+- python-dotenv
+
+---
+
+## 📂 Estrutura do projeto

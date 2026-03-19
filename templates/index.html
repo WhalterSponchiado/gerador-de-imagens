@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Gerador de Imagens IA</title>
+</head>
+
+<body>
+
+<h1>Gerador de Imagens com IA</h1>
+
+<form method="POST">
+
+<input name="prompt" placeholder="Digite o prompt">
+<button type="submit">Gerar</button>
+
+</form>
+
+<hr>
+
+<h2>Preview</h2>
+
+{% if imagem %}
+<img src="{{ imagem }}" width="400">
+
+<br><br>
+
+<a href="{{ imagem }}" download>
+<button>Download</button>
+</a>
+
+{% endif %}
+
+<hr>
+
+<h2>Galeria</h2>
+
+{% for img in galeria %}
+<img src="imagens/{{ img }}" width="150">
+{% endfor %}
+
+<hr>
+
+<h2>Histórico</h2>
+
+<ul>
+
+{% for item in historico %}
+<li>{{ item.prompt }} - {{ item.data }}</li>
+{% endfor %}
+
+</ul>
+
+</body>
+</html>
